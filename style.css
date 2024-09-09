@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  --scrollbarBG: #cccccc;
+  --thumbBG: #00baf2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 20px;
+}
+
+.paybill{
+  background: #00baf2;
+}
+
+.bookbuy{
+  background: #0f4a8a;
+}
+
+.paytm-payment, paytm-UPI, .postpaid, .cashback, .paytm-money, .personal-loan, .pay-online, .inshop, .footer-download{
+  background: #f5f7fa;
+}
+
+.get-started, .best-travel{
+  background: #f0fbff;
+}
+
+.section1-card > div > div,
+.section2-card > div > div,
+.arrow > div {
+  margin-left: 6px;
+  padding: 3px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
